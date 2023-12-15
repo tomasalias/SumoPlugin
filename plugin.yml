@@ -1,0 +1,22 @@
+name: SumoPlugin
+version: 2.0
+main: com.example.sumo.SumoPlugin
+author: Dominik
+description: A Minecraft plugin that teleports players to a sumo arena and lets them fight a sumo bot.
+api-version: 1.20
+depend: [Citizens]
+
+commands:
+  sumo:
+    description: Set hub, arena, and bot locations or join the arena.
+    usage: |
+      /<command> hub - Set the hub location.
+      /<command> arena - Set the arena location.
+      /<command> bot - Set the bot location.
+      /<command> world <worldname> - Set the sumo world name
+    aliases: []
+
+permissions:
+  sumo.place:
+    description: Allows placing and interacting with Sumo signs.
+    default: op
